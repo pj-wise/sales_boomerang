@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
+body {
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+  background-color: #272343;
+}
+
+body h1 {
+  margin-left: 1%;
+  text-align: left;
+  color: #fff;
+}
+
+body .thankyou {
+  color: #e3f6f5;
+  line-height: 0.1em;
+}
+
+.addressGrid {
+  width: 99%;
+  margin: 0 auto;
+  border-radius: 1%;
+  background-color: #e3f6f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.addressCard {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #bae8e8;
+  border-radius: 4%;
+  margin: 1em;
+  line-height: 0.3em;
+}
+
+.addressCard .houseImg {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+  border-radius: 4%;
+  width: 98%;
+  margin: 3px;
+}
+
+.addressCard:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.addressCard:hover .houseImg {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+/*# sourceMappingURL=App.css.map */
