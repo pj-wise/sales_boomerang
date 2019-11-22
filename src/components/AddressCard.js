@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import houseImg from "./imgs/white-and-red-wooden-house-with-fence-1029599.jpg";
+
+import { Modal, Header } from "semantic-ui-react";
+import MapModal from "./MapModal";
 
 const AddressCard = ({ primary, city, state, zip }) => {
   return (
@@ -10,6 +13,26 @@ const AddressCard = ({ primary, city, state, zip }) => {
         {city}, {state}
       </h4>
       <h4>{zip}</h4>
+      <Modal trigger={<button className='modalBtn'>More Info</button>}>
+        <Modal.Header
+          style={{
+            textAlign: "center",
+            color: "#2059A6",
+            fontSize: "1.2em",
+            fontFamily: "SpaceMeatballRegular"
+          }}>
+          {primary}
+        </Modal.Header>
+        <Modal.Content>
+          <Modal.Description
+            style={{
+              textAlign: "center"
+            }}>
+            <Header>{city}</Header>
+            <MapModal primary={primary} city={city} state={state} />
+          </Modal.Description>
+        </Modal.Content>
+      </Modal>
     </div>
   );
 };

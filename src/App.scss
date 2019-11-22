@@ -6,19 +6,18 @@ body {
   background-color: #272343;
 
   h1 {
-    margin-left: 1%;
+    margin-left: 2%;
     text-align: left;
     color: #fff;
   }
 
   .thankyou {
     color: #e3f6f5;
-    line-height: 0.1em;
   }
 }
 
 .addressGrid {
-  width: 99%;
+  width: 96%;
   margin: 0 auto;
   border-radius: 5px;
   background-color: #e3f6f5;
@@ -37,11 +36,11 @@ body {
 
 .addressCard {
   width: 30%;
+  font-size: 1.1em;
   background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid #bae8e8;
   border-radius: 4%;
   margin: 1em;
-  line-height: 0.5em;
 
   @media (max-width: 550px) {
     width: 65%;
@@ -61,5 +60,14 @@ body {
     .houseImg {
       filter: grayscale(0%);
     }
+  }
+
+  .modalBtn {
+    margin: 1em;
+    padding: 0.5em;
+    width: 7em;
+    background-color: #272343;
+    border: 2px solid #bae8e8;
+    color: #fff;
   }
 }
