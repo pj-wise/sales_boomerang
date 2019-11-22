@@ -43,16 +43,17 @@ const AddressGrid = () => {
           />
         );
       })}
-      <button class='moreBtn' onClick={() => changeLimit()}>
-        View More
-      </button>
+
       <h1
         style={{
           display: loading === true ? "block" : "none",
           color: "#272343"
         }}>
-        Loading Addresses
+        Loading Addresses...
       </h1>
+      <button className='moreBtn' onClick={() => changeLimit()}>
+        View More
+      </button>
     </div>
   );
 };
