@@ -5,17 +5,19 @@ body {
   background-color: #272343;
 }
 
-body h1 {
+.App h1 {
   margin-left: 2%;
   text-align: left;
   color: #fff;
 }
 
-body .thankyou {
+.App .thankyou {
   color: #e3f6f5;
+  height: 4em;
+  margin: 0.5em auto 0 auto;
 }
 
-.addressGrid {
+.App .addressGrid {
   width: 96%;
   margin: 0 auto;
   border-radius: 5px;
@@ -30,7 +32,7 @@ body .thankyou {
           justify-content: center;
 }
 
-.addressGrid .moreBtn {
+.App .addressGrid .moreBtn {
   width: 100%;
   font-size: 1.5em;
   border: 2px solid #bae8e8;
@@ -38,7 +40,7 @@ body .thankyou {
   cursor: pointer;
 }
 
-.addressCard {
+.App .addressCard {
   width: 30%;
   font-size: 1.1em;
   background-color: rgba(255, 255, 255, 0.3);
@@ -48,12 +50,12 @@ body .thankyou {
 }
 
 @media (max-width: 550px) {
-  .addressCard {
+  .App .addressCard {
     width: 65%;
   }
 }
 
-.addressCard .houseImg {
+.App .addressCard .houseImg {
   -webkit-filter: grayscale(60%);
           filter: grayscale(60%);
   border-radius: 4%;
@@ -61,22 +63,45 @@ body .thankyou {
   margin: 1%;
 }
 
-.addressCard:hover {
+.App .addressCard:hover {
   background-color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
 
-.addressCard:hover .houseImg {
+.App .addressCard:hover .houseImg {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
 }
 
-.addressCard .modalBtn {
+.App .addressCard .modalBtn {
   margin: 1em;
-  padding: 0.5em;
-  width: 7em;
-  background-color: #272343;
-  border: 2px solid #bae8e8;
+  padding: 0.7em;
+  width: 8em;
+  background-color: #25213a;
+  border: 3px solid #bae8e8;
+  border-radius: 5px;
   color: #fff;
+  cursor: pointer;
+}
+
+.App .addressCard .modalBtn:hover {
+  background-color: #bae8e8;
+  color: #25213a;
+  font-weight: 700;
+  border: 3px solid #25213a;
+}
+
+.App .addressCard .mapModal {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+}
+
+.App .addressCard .mapModal .innerMapComp {
+  margin: 0 auto;
+}
+
+.App .addressCard .mapModal .innerMapComp .gMap {
+  width: 400px;
 }
 /*# sourceMappingURL=App.css.map */

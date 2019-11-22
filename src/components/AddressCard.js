@@ -21,15 +21,20 @@ const AddressCard = ({ primary, city, state, zip }) => {
             fontSize: "1.2em",
             fontFamily: "SpaceMeatballRegular"
           }}>
-          {primary}
+          {primary}&nbsp;
+          {city}, {state}
         </Modal.Header>
         <Modal.Content>
           <Modal.Description
             style={{
               textAlign: "center"
             }}>
-            <Header>{city}</Header>
-            <MapModal primary={primary} city={city} state={state} />
+            <MapModal
+              className='mapModal'
+              primary={primary}
+              city={city}
+              state={state}
+            />
           </Modal.Description>
         </Modal.Content>
       </Modal>

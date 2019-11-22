@@ -21,7 +21,7 @@ const MapModal = ({ primary, city, state }) => {
 
   return (
     <div>
-      <InnerMap lat={lat} lng={lng} />
+      <InnerMap className='innerMapComp' lat={lat} lng={lng} />
     </div>
   );
 };

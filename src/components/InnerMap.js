@@ -5,11 +5,13 @@ const InnerMap = props => {
   return (
     <div>
       <GoogleMap
+        className='gMap'
         mapContainerStyle={{
           height: "40em",
-          width: "60em"
+          width: "50em",
+          margin: "0 auto"
         }}
-        zoom={12}
+        zoom={18}
         center={{ lat: props.lat, lng: props.lng }}
       />
     </div>
