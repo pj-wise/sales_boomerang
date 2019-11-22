@@ -1,7 +1,7 @@
 import React from "react";
 import { GoogleMap } from "@react-google-maps/api";
 
-const InnerMap = () => {
+const InnerMap = props => {
   return (
     <div>
       <GoogleMap
@@ -9,8 +9,8 @@ const InnerMap = () => {
           height: "40em",
           width: "60em"
         }}
-        zoom={7}
-        center={{ lat: 8, lng: 48 }}
+        zoom={12}
+        center={{ lat: props.lat, lng: props.lng }}
       />
     </div>
   );
